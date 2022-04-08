@@ -119,6 +119,12 @@ td button {
     text-align: center;
 }
 
+.tamanho-imagem {
+    width: 55px;
+    height: 55px;
+    
+}
+
 
 #back-button {
     background-color: white;
