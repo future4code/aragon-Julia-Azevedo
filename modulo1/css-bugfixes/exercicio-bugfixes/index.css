@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+body {
+    font-family: Roboto;
+}
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
@@ -107,6 +111,14 @@ td button {
     color: black;
 }
 
+button.efeitos:hover {
+    background-color: #ac973a9f;
+}
+
+button.efeitos:active {
+    color: white;
+}
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
@@ -125,6 +137,7 @@ td button {
     width: 18px;
     height: 18px;
 }
+
 
 #back-button {
     background-color: white;
