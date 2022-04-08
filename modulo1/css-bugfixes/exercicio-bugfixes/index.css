@@ -115,6 +115,10 @@ td button {
     height: 100px;
 }
 
+.texto-tabela {
+    text-align: center;
+}
+
 
 #back-button {
     background-color: white;
