@@ -33,9 +33,6 @@ div>p:first-child {
     display: inline;
 }
 
-div img {
-    background: black;
-}
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -122,9 +119,12 @@ td button {
 .tamanho-imagem {
     width: 55px;
     height: 55px;
-    
 }
 
+.lupa {
+    width: 18px;
+    height: 18px;
+}
 
 #back-button {
     background-color: white;
