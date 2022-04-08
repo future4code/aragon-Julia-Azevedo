@@ -101,6 +101,7 @@ div:last-child {
 
 table {
     width: 60%;
+    margin: auto;
 }
 
 td button {
@@ -109,14 +110,6 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
-}
-
-button.efeitos:hover {
-    background-color: #ac973a9f;
-}
-
-button.efeitos:active {
-    color: white;
 }
 
 .container-do-search {
@@ -138,6 +131,13 @@ button.efeitos:active {
     height: 18px;
 }
 
+button.efeitos:hover {
+    background-color: #ac973a9f;
+}
+
+button.efeitos:active {
+    color: white;
+}
 
 #back-button {
     background-color: white;
