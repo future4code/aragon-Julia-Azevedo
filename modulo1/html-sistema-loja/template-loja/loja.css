@@ -1,0 +1,55 @@
+* {
+    background-color:#84cfa1;
+}
+
+.cabecalho {
+    font-family: 'BIZ UDMincho', serif;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+  }
+
+.sub-cabecalho {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+  }
+
+.imagem-frutaria {
+    display: flex;
+    justify-content: center;
+    margin-left: 28%;
+    border-radius: 6%;
+    max-width: 600px;
+    max-height: 450px;
+    width: auto;
+    height: auto;
+}
+
+.cabecalho-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+  }
+
+.borda {
+    padding: 0.5em;
+    border: 3px solid #02140d; margin-right: 75%;
+    border-radius: 2%;
+}
+
+.funcionarios {
+    padding: 1.8em;
+    border: 3px solid #02140d; margin-right: 90%;
+    border-radius: 2%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais {
+    height: 30px;
+    margin-right: 14%;
+}
