@@ -1,49 +1,23 @@
-/* exercícios de interpretação 
-1- a) false b) false c) true d) boolean
+//1
+usuario = prompt("Qual é o seu nome?")
+email = prompt("Qual é o seu e-mail?")
 
-2- O número seguido do outro número, pois os dois são uma string.
+console.log("O e-mail" + email + "foi cadastrado com sucesso. Seja bem-vinda(o)," + usuario +!)
 
-3-
-let primeiroNumero = Number(prompt("Digite um numero!"))
-let segundoNumero = Number(prompt("Digite outro numero!"))
+//2
+const comidasPreferidas = ["Cheeseburger", "Macarrão", "Bife", "Batata", "Queijo"]
 
-const soma = primeiroNumero + segundoNumero
+console.log(comidasPreferidas)
+console.log("Essas são as minhas comidas preferidas: " + comidasPreferidas)
 
-console.log(soma)
-*/
+comidasPreferidasUsuario = prompt("Quais são as suas comidas preferidas?")
 
-// exercícios de escrita 
+//3
+var listaDeTarefas = []
+tarefas = prompt("Digite 3 tarefas que você precisa realizar hoje:")
+tarefas.push(tarefas)
+console.log(tarefas)
 
-// 1
-const idade = Number(prompt("Qual é a sua idade?"))
-const idadeAmigo = Number(prompt("Qual é a idade do seu melhor amigo?"))
-
-console.log("Sua idade é maior do que a do seu melhor amigo?", idade >= idadeAmigo)
-console.log("A diferença entre as suas idades é de:", idade - idadeAmigo)
-
-// 2
-const numeroPar = Number(prompt("Insira um número par:"))
-
-console.log(numeroPar%2)
-
-// 2c: O resto da divisão é sempre 0
-// 2d: O resto da divisão é sempre 1
-
-// 3
-const idadeEmAnos = Number(prompt("Qual é a sua idade em anos?"))
-const meses = idadeEmAnos*12
-const dias = idadeEmAnos*365
-const horas = idadeEmAnos*8760
-
-console.log("A sua idade em meses é de:", meses)
-console.log("A sua idade em dias é de:", dias)
-console.log("A sua idade em horas é de:", horas)
-
-// 4
-const n1 = Number(prompt("Digite o primeiro número: "))
-const n2 = Number(prompt("Digite o segundo número: "))
-
-console.log(n1>n2)
-console.log(n1==n2)
-console.log((n1%n2)==0)
-console.log((n2%n1)==0)
+tarefasRealizadas = prompt("Digite o índice das tarefas que você já realizou:")
+tarefasRealizadas.pop()
+console.log(tarefasRealizadas)
