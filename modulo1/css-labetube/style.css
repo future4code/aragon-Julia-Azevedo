@@ -1,7 +1,10 @@
-body, h2, p {
+
+
+   body, h2, p {
     margin: 0;
     padding: 0;
   }
+  @media screen and (min-device-width:414px)
   
   h2, p {
     padding: 10px;
