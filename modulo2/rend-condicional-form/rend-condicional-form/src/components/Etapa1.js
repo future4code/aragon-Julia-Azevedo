@@ -1,11 +1,5 @@
-import styled from 'styled-components';
-import React from 'react';
 
-const Estilo = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
+import React from 'react';
 
 function Etapa1(){
    return(

@@ -19,20 +19,20 @@ const InputsContainer = styled.div`
 `
 
 class App extends React.Component {
-    state = {
-      tarefas: [{
-        id: Date.now(),
-        texto: 'Fazer macarrão',
-        completa: false
-      },
-      {
-        id: Date.now(),
-        texto: 'Estudar React',
-        completa: true
-      }],
-      inputValue: '',
-      filtro: ''
-    }
+  state = {
+    tarefas: [{
+      id: Date.now(),
+      texto: 'Fazer macarrão',
+      completa: false
+    },
+    {
+      id: Date.now(),
+      texto: 'Estudar React',
+      completa: true
+    }],
+    inputValue: '',
+    filtro: ''
+  }
 
   componentDidUpdate(prevState) {
     if (prevState.tarefas !== this.state.searchInput) {
@@ -42,7 +42,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const tarefasSalvas = localStorage.getItem("tarefas");
-    this.setState ({tarefas: JSON.parse(tarefasSalvas)});
+    this.setState({});
   };
 
   onChangeInput = (event) => {
@@ -73,7 +73,7 @@ class App extends React.Component {
   }
 
   onChangeFilter = (event) => {
-    this.setState({filtro: event.target.value});
+     this.setState({filtro: event.target.value});
   }
 
   render() {
