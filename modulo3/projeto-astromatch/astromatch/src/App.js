@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import RenderPages from "./pages/RenderPages";
 
 function App() {
   return (
-    <div className="App">
-      <p>1o edição</p>
-    </div>
+    <>
+      <RenderPages />
+    </>
   );
 }
 
