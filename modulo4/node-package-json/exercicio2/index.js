@@ -6,7 +6,6 @@
     
 // Comando → npm run start add 2 2
 // Resposta esperada → 4
-
 // - Exemplo 2:
 
 // Comando → npm run start sub 10 2
@@ -24,10 +23,21 @@
 
 // Dicas: 
 
-// - Dica 1: Lembre-se da ordem de recebimento de argumentos do node. Para acessar os argumentos,
-// usamos o objeto process.argv, que é um array de todos os parâmetros usados pelo Node. Os 
-// argumentos [0] e [1] são fixos, onde o primeiro é o próprio Node e o segundo é o arquivo que
-//  está rodando. Todos os valores são armazenados como string.
+// - Dica 1: Todos os valores são armazenados como string.
 // - Dica 2: Pense em uma maneira de separar a sua lógica condicionalmente para cada tipo 
 // de operação passada como parâmetro para o Node.
 
+function calculo(operador, n1, n2) {
+    switch (operador) {
+        case "adicao":
+            return Number(n1) + Number(n2)
+        case "subtracao":
+            return Number(n1) - Number(n2)
+        case "multiplicacao":
+            return Number(n1) * Number(n2)
+        case "divisao":
+            return Number(n1) / Number(n2)
+    }
+}
+
+console.log(calculo(process.argv[2],process.argv[3],process.argv[4])) 

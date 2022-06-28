@@ -12,3 +12,17 @@
 // transformar estes valores em um tipo number.
 
 // a) usando process.argv
+
+// b)
+// const nome = process.argv[2]
+// const idade = process.argv[3]
+// console.log(`Olá, ${nome}! Você tem ${idade} anos!`)
+
+// c)
+const nome = process.argv[2]
+const idade = process.argv[3]
+const idadeFutura = Number(idade) + Number(7)
+console.log(`Olá, ${nome}! Você tem ${idade} anos! em sete anos você terá ${idadeFutura} anos`)
+
+
+

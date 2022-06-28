@@ -11,3 +11,12 @@
 
 // Observação: A lista de tarefas só estará atualizada durante a execução do
 //  código. Ao rodar novamente, a lista começará novamente a partir de seu estado inicial.
+
+const tarefas = ["Lavar a louça",]
+
+function adicionarTarefa(tarefa) {
+    tarefas.push(tarefa)
+    return `Tarefa adicionada com sucesso!, tarefas: ${tarefas}`
+}
+
+console.log(adicionarTarefa(process.argv[2]))
