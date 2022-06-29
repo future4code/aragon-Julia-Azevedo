@@ -1,10 +1,10 @@
 function temperatureConverter(celsius, scale) {
   
-    if (scale === "F") {
+    if (scale === "F" && typeof celsius === 'number') {
     return (celsius+ "° Celsius é equivalente a "+ ((celsius*1.8)+32) + "° Fahrenheit")
     }
   
-    else if (scale === "K") {
+    else if (scale === "K" && typeof celsius === 'number') {
     return (celsius+ "° Celsius é equivalente a "+ (celsius+273.15) + " Kelvin")
     }
   
@@ -12,4 +12,4 @@ function temperatureConverter(celsius, scale) {
   
   }
   
-  console.log(temperatureConverter(50, "F"))
+  console.log(temperatureConverter(dez, "F"))
