@@ -110,7 +110,7 @@ app.delete("/afazeres/:id", (req: Request, res: Response) => {
 
     if (index === -1) {
         return res.send({
-            mensagem: "Produto não encontrado",
+            mensagem: "Afazer não encontrado",
             id: id
         })
     }
