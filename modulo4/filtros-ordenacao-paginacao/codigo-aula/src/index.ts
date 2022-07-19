@@ -20,13 +20,13 @@ app.listen(process.env.PORT || 3003, () => {
 app.get("/ping", ping)
 
 // Get produto
-app.get("/users", pegaProduto)
+app.get("/products", pegaProduto)
 
 // Post produto
-app.get("/users", criaProduto)
+app.post("/products", criaProduto)
 
 // Put produto
-app.get("/users", editaProduto)
+app.put("/products/:id", editaProduto)
 
 // Remove produto
-app.get("/users", removeProduto)
+app.delete("/products/:id", removeProduto)

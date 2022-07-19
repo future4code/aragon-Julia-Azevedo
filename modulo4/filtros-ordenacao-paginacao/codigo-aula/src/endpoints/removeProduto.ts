@@ -27,7 +27,7 @@ export const removeProduto = async (req: Request, res: Response) => {
       WHERE id = "${id}"
       `)
 
-    res.status(200).send({ message: "O preço foi deletado com sucesso!" })
+    res.status(200).send({ message: "O produto foi deletado com sucesso!" })
 
   } catch (error) {
     res.status(errorCode).send({ message: error.message })
