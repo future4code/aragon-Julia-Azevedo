@@ -1,0 +1,11 @@
+### Ping
+GET http://localhost:3003/ping
+
+GET http://localhost:3003/perfumes
+
+PUT http://localhost:3003/perfumes/:id
+
+POST http://localhost:3003/perfumes
+
+DELETE http://localhost:3003/perfumes/:id
+
