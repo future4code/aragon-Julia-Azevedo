@@ -1,21 +1,21 @@
-import { IClassroomDB } from "../../models/Classroom"
+import { CLASSROOM_MODULE, IClassroomDB } from "../../models/Classroom"
 import { IHobbiesDB, IStudentDB, IStudentsHobbiesDB } from "../../models/Student"
 
 export const classrooms: IClassroomDB[] = [
     {
         id: "101",
         name: "Aragon",
-        module: "5"
+        module: CLASSROOM_MODULE.FIVE
     },
     {
         id: "102",
         name: "Silveira",
-        module: "6"
+        module: CLASSROOM_MODULE.SIX
     },
     {
         id: "103",
         name: "Molina",
-        module: "0"
+        module: CLASSROOM_MODULE.ZERO
     }
 ]
 

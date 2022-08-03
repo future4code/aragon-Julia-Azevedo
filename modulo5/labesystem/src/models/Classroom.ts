@@ -1,7 +1,17 @@
+export enum CLASSROOM_MODULE {
+    "ZERO" = "0",
+    "ONE" = "1",
+    "TWO" = "2",
+    "THREE" = "3",
+    "FOUR" = "4",
+    "FIVE" = "5",
+    "SIX" = "6"
+}
+
 export interface IClassroomDB {
     id: string,
     name: string,
-    module: string
+    module: CLASSROOM_MODULE
 }
 
 export class Classroom {
@@ -9,7 +19,7 @@ export class Classroom {
         private id: string,
         private name: string,
         private students: string[],
-        private module: number
+        private module: CLASSROOM_MODULE
     ) {}
 
     public getId() {
@@ -40,7 +50,7 @@ export class Classroom {
         this.students = [...newStudents]
     }
 
-    public setModule(newModule: number) {
+    public setModule(newModule: CLASSROOM_MODULE) {
         this.module = newModule
     }
 }
