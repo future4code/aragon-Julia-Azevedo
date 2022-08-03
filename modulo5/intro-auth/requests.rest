@@ -1,0 +1,33 @@
+### Endpoint de teste
+GET http://localhost:3003/ping
+
+### cadastro
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "nickname":"julia",
+    "email":"julia@gmail.com",
+    "password":"okwdjifh"
+}
+
+### login
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "email":"julia@gmail.com",
+    "password":"okwdjifh"
+}
+
+### exibe usuários
+GET http://localhost:3003/users?search=a
+Authorization: 
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk4MmZmOTRkLTJjNWUtNDAyMS05ZjQ4LTM2Zjk0NTc2YTljNSIsImlhdCI6MTY1OTUyNzM2MiwiZXhwIjoxNjU5NjEzNzYyfQ.Nb2CclTrtIH6oj1Qe_01VIfBkyrGwEmdFf1L6EMEybo
+
+### modifica usuário
+PUT http://localhost:3003/users?search=a
+
+### deleta usuário
+DELETE http://localhost:3003/users/bb9b7ee8-ae4b-4bd1-9bd6-e7e21594399b
+
